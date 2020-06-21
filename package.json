@@ -1,0 +1,16 @@
+{
+  "name": "compound-subgraph",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ mauerv/compound-subgraph",
+    "create-local": "graph create --node http://localhost:8020/ mauerv/compound-subgraph",
+    "remove-local": "graph remove --node http://localhost:8020/ mauerv/compound-subgraph",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 mauerv/compound-subgraph"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.18.0",
+    "@graphprotocol/graph-ts": "0.18.0"
+  }
+}
